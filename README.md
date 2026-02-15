@@ -20,11 +20,26 @@ An Android SDK for controlling ESP32-based **Dezibot** robots. The SDK creates a
 A demo application showcasing the SDK is available at:  
 👉 [Dezibot Demo App](https://gitlab.dit.htwk-leipzig.de/dezibot-android-sdk/dezibot-demo-app)
 
+## ⚠️ Firmware Requirement
+
+**Important**: Dezibot devices must be running the special client firmware to connect to the Android host.
+
+The required firmware is available here:  
+👉 [Dezibot Client Firmware](https://gitlab.dit.htwk-leipzig.de/dezibot-android-sdk/websocket)
+
+Without this firmware, Dezibot devices will not be able to:
+- Discover the BLE GATT service
+- Connect to the WiFi hotspot
+- Communicate via WebSocket
+
+Please flash your Dezibot devices with this firmware before using the SDK.
+
 ## Requirements
 
 - **Android 8.0+** (API level 26)
 - **Kotlin** 1.9+
 - Device with **WiFi** and **Bluetooth LE** support
+- **Dezibot devices with WebSocket firmware** (see above)
 
 ## Installation
 
@@ -630,7 +645,7 @@ Responses include a `status` field:
 - Some devices don't support BLE peripheral mode
 
 **Devices not connecting**
-- Verify the Dezibot firmware supports the WebSocket protocol
+- **Verify the Dezibot has the required WebSocket firmware** (see [Firmware Requirement](#️-firmware-requirement))
 - Check that the Dezibot is scanning for the correct BLE service UUID
 - Ensure the device is within WiFi range
 
