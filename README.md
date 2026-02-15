@@ -25,7 +25,7 @@ A demo application showcasing the SDK is available at:
 **Important**: Dezibot devices must be running the special client firmware to connect to the Android host.
 
 The required firmware is available here:  
-👉 [Dezibot Client Firmware](https://gitlab.dit.htwk-leipzig.de/dezibot-android-sdk/websocket)
+👉 [Dezibot Client Firmware](https://gitlab.dit.htwk-leipzig.de/dezibot-android-sdk/dezibot-client-firmware)
 
 Without this firmware, Dezibot devices will not be able to:
 - Discover the BLE GATT service
