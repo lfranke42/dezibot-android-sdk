@@ -20,7 +20,7 @@ An Android SDK for controlling ESP32-based **Dezibot** robots. The SDK creates a
 A demo application showcasing the SDK is available at:  
 👉 [Dezibot Demo App](https://gitlab.dit.htwk-leipzig.de/dezibot-android-sdk/dezibot-demo-app)
 
-## ⚠️ Firmware Requirement
+## Firmware Requirement
 
 **Important**: Dezibot devices must be running the special client firmware to connect to the Android host.
 
