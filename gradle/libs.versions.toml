@@ -1,4 +1,5 @@
 [versions]
+dokka = "2.1.0"
 agp = "8.13.2"
 androidDocumentationPlugin = "2.1.0"
 kotlin = "2.3.10"
@@ -23,6 +24,7 @@ okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhtt
 
 
 [plugins]
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
