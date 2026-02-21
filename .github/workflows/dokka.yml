@@ -5,6 +5,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -32,6 +35,9 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
 
       - name: Generate Dokka documentation
         run: ./gradlew :dezibot:dokkaGenerate
