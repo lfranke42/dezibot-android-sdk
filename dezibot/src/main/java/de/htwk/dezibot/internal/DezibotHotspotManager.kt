@@ -13,7 +13,7 @@ import android.os.Looper
  * Note: Android generates random SSID/password for LocalOnlyHotspot for security.
  * Custom credentials are not supported for regular (non-system) apps.
  */
-class DezibotHotspotManager(private val context: Context) {
+internal class DezibotHotspotManager(private val context: Context) {
 
     interface Listener {
         fun onHotspotStarted(ssid: String, password: String)
